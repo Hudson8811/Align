@@ -431,9 +431,11 @@
         }
     }
     #chart_div{
-        margin-top: -60px;
-        z-index: -1;
-        position: relative;
+        >div:first-child{
+            margin-top: -60px;
+            z-index: -1;
+            position: relative;
+        }
     }
 }
 

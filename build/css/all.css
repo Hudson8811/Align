@@ -2312,7 +2312,7 @@ input:-moz-placeholder {
     border: none; }
     #sliderControl .form__block-footer-del .fa-trash-alt:before {
       content: "\f00d"; }
-  #chart_div {
+  #chart_div > div:first-child {
     margin-top: -60px;
     z-index: -1;
     position: relative; } }
