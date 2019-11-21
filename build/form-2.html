@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">-->
+
+    <title>Form</title>
+    <link rel="stylesheet" href="extension/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="extension/font-awesome/css/all.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+    <header class="g-header js-header">
+        <div class="container">
+            <div class="g-header__menu">
+                <i class="g-header__menu-mobi-link js-mobiLink"></i>
+                <div class="g-header__menu-wrap">
+                    <ul class="g-header__menu-content">
+                        <li class="menu-item current-menu-item">
+                            <a href="">How it Works</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">About Us</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Resources</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Educators</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">News</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Help Center</a>
+                        </li>
+                    </ul>
+    
+                    <a href="telTo:(123) 456-7890" class="g-header__menu-tel">
+                        <i class="g-header__menu-tel-icon"></i>
+                        <span class="g-header__menu-tel-num">(123) 456-7890</span>
+                    </a>
+                </div>
+            </div>
+            <a href="/" class="g-header__logo"></a>
+    
+            <a href="telTo:(123) 456-7890" class="g-header__tel">
+                <i class="g-header__tel-icon"></i>
+                <span class="g-header__tel-num">(123) 456-7890</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="form-line">
+        <div class="container">
+            <div class="form-line__block m-career">
+                <div class="form-line__block-title">
+                    Selected Career Path:
+                </div>
+                <div class="form-line__block-data">
+                    Doctorate Degree / Healthcare / Physical Therapist Assistant & Aide
+                </div>
+            </div>
+            <div class="form-line__block">
+                <div class="form-line__block-title">
+                    Avg. Annual Income
+                </div>
+                <div class="form-line__block-data">
+                    $250K
+                </div>
+            </div>
+            <div class="form-line__block">
+                <div class="form-line__block-title">
+                    Years to Achieve
+                </div>
+                <div class="form-line__block-data">
+                    7–10 yrs
+                </div>
+            </div>
+        </div>
+
+        <div class="form-line__bar" style="width: 20%;"></div>
+    </div>
+    <div class="container">
+        <form class="form-p2">
+            <h1 class="form-p2__title">What is your current education level?</h1>
+
+            <div class="form-p2__line">
+                <div class="ui-dropdown dropdown js-dropdown">
+                    <div class="ui-dropdown__btn checked js-dropdownLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Desired Education Level
+
+                        <span class="fa fa-chevron-down"></span>
+                    </div>
+                    <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu">
+                        <div class="ui-dropdown__menu-content no-search js-niceScroll">
+                            <input type="text" class="ui-dropdown__menu-content-input" placeholder="Select One" />
+
+                            <div class="ui-dropdown__menu-content-item">
+                                Associate’s Degree
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-p2__line">
+                <div class="ui-dropdown dropdown js-dropdown">
+                    <div class="ui-dropdown__btn checked js-dropdownLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Desired Education Level
+
+                        <span class="far fa-calendar-day"></span>
+                    </div>
+                    <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu">
+                        <div class="ui-dropdown__menu-content js-niceScroll">
+                            <input type="text" class="ui-dropdown__menu-content-input" placeholder="Select One" />
+
+                            <div class="ui-dropdown__menu-content-item">
+                                Associate’s Degree
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-p2__btn form-p2__line">
+                <input type="submit" class="form-p2__btn-link" value="Continue" />
+            </div>
+            <div class="form-p2__btn">
+                <a href="" class="form-p2__btn-link m-light">Continue</a>
+            </div>
+        </form>
+
+        <form class="form-p2">
+            <h1 class="form-p2__title">What is your name?</h1>
+
+            <div class="form-p2__line">
+                <div class="row">
+                    <div class="col-sm-3 form-p2__line-mobi-mb20">
+                        <div class="form-p2__line-label">Suffix</div>
+                        <div class="ui-dropdown dropdown js-dropdown">
+                            <div class="ui-dropdown__btn checked js-dropdownLink" id="e2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Mr.
+                            </div>
+                            <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="e2">
+                                <div class="ui-dropdown__menu-content">
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Mr.
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Ms.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="form-p2__line-label">First Name</div>
+                        <input type="text" class="form-p2__input" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-p2__line">
+                <input type="text" class="form-p2__input" placeholder="Last Name" />
+            </div>
+
+            <div class="form-p2__btn form-p2__line">
+                <input type="submit" class="form-p2__btn-link" value="Continue" />
+            </div>
+        </form>
+
+        <form class="form-p2">
+            <h1 class="form-p2__title">And lastly, we need some contact information...</h1>
+
+            <div class="form-p2__line">
+                <div class="form-p2__line-label">Phone Number</div>
+                <input type="tel" class="form-p2__input" value="e.g. (123) 456-7890 " />
+            </div>
+
+            <div class="form-p2__line">
+                <input type="email" class="form-p2__input" placeholder="Email Address" />
+            </div>
+
+            <div class="form-p2__text">
+                By clicking the button below, I agree to receive emails, SMS, phone calls and pre-recorded messages to
+                the provided phone number. Message and data rates may apply. By clicking the button below, I certify
+                that I am over the age of 18 and agree to the Privacy Policy and Terms & Conditions.
+            </div>
+
+            <div class="form-p2__btn form-p2__line">
+                <input type="submit" class="form-p2__btn-submit" value="Continue" />
+            </div>
+
+            <div class="form-p2__privacy">
+                <span class="far fa-unlock-alt"></span>
+                We take your privacy seriously. Seriously!
+            </div>
+        </form>
+    </div>
+
+    <footer class="g-footer">
+        <div class="g-footer__menu">
+            <div class="container">
+                <ul class="g-footer__menu-list">
+                    <li class="menu-item">
+                        <a href="">Disclaimer</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Terms & Conditions</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">SMS Terms</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Unsubscribe</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">FAQs</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="g-footer__social">
+                <div class="g-footer__social-one">
+                    <a href="" class="g-footer__social-one-link fab fa-facebook-square"></a>
+                </div>
+                <div class="g-footer__social-one">
+                    <a href="" class="g-footer__social-one-link fab fa-linkedin"></a>
+                </div>
+                <div class="g-footer__social-one">
+                    <a href="" class="g-footer__social-one-link fab fa-instagram"></a>
+                </div>
+            </div>
+    
+            <div class="g-footer__text">
+                *This is an education offer not related to any jobs, promotions, or rewards. Prospective students should
+                discuss these options with a school representative,
+                as this site does not determine eligibility for financial aid. Financial aid is available to those who
+                qualify.
+                <br /><br />
+                &copy; 2019 Align. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="extension/jquery.nicescroll.js"></script>
+    <script src="extension/bootstrap/js/popper.min.js"></script>
+    <script src="extension/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/global.js"></script>
+</body>
+
+</html>

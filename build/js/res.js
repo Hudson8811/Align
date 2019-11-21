@@ -1,0 +1,1 @@
+jQuery(function(e){function s(){e(window).width()<768?o.addClass("carousel slide").carousel({interval:5e3,wrap:!0,touch:!0}):o.removeClass("carousel slide").carousel("dispose")}var o=e(".js-carousel");s(),e(window).on("resize",function(){s()})});

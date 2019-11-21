@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">-->
+
+    <title>Find school</title>
+    <link rel="stylesheet" href="extension/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="extension/font-awesome/css/all.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+    //= template/header.html
+
+    <div class="p-fs">
+        <div class="container">
+            <div class="p-fs__step">
+                Step 2. Let’s find a school
+            </div>
+            <div class="p-fs__title">
+                Great! This last step will help us better determine the right fit for you!
+            </div>
+
+            <form class="p-fs__form">
+                <div class="p-fs__form-line">
+                    <div class="p-fs__form-line-block">
+                        <div class="ui-dropdown dropdown js-dropdown">
+                            <div class="ui-dropdown__btn js-dropdownLink" id="cel" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="js-dropdownLinkText">Current Education Level</div>
+
+                                <i class="fa fa-check"></i>
+                                <span class="fa fa-chevron-down"></span>
+                            </div>
+                            <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="cel">
+                                <div class="ui-dropdown__menu-content js-niceScroll">
+                                    <input type="text" class="ui-dropdown__menu-content-input"
+                                        placeholder="Select One" />
+
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree 2
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree 3
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Sede sdfsdf
+                                    </div>
+
+                                    <p class="ui-dropdown__menu-content-search">
+                                        <input type="text" class="ui-dropdown__menu-content-search-input js-search"
+                                            placeholder="Find some" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-fs__form-line-block">
+                        <div class="ui-dropdown dropdown js-dropdown">
+                            <div class="ui-dropdown__btn js-dropdownLink" id="gy" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="js-dropdownLinkText">Graduation Year</div>
+
+                                <i class="fa fa-check"></i>
+                                <span class="fa fa-chevron-down"></span>
+                            </div>
+                            <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="gy">
+                                <div class="ui-dropdown__menu-content js-niceScroll">
+                                    <input type="text" class="ui-dropdown__menu-content-input"
+                                        placeholder="Select One" />
+
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree 2
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree 3
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Sede sdfsdf
+                                    </div>
+
+                                    <p class="ui-dropdown__menu-content-search">
+                                        <input type="text" class="ui-dropdown__menu-content-search-input js-search"
+                                            placeholder="Find some" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-fs__form-line">
+                    <div class="p-fs__form-line-block">
+                        <div class="p-fs__form-line-block-date-icon fal fa-calendar-alt"></div>
+                        <input type="text" class="p-fs__form-line-block-input js-datePicker"
+                            placeholder="Starting Date" />
+                    </div>
+                    <div class="p-fs__form-line-block">
+                        <div class="ui-dropdown dropdown js-dropdown">
+                            <div class="ui-dropdown__btn js-dropdownLink" id="yg" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="js-dropdownLinkText">Your Gender</div>
+
+                                <i class="fa fa-check"></i>
+                                <span class="fa fa-chevron-down"></span>
+                            </div>
+                            <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="yg">
+                                <div class="ui-dropdown__menu-content js-niceScroll">
+                                    <input type="text" class="ui-dropdown__menu-content-input"
+                                        placeholder="Select One" />
+
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree 2
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree 3
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Sede sdfsdf
+                                    </div>
+
+                                    <p class="ui-dropdown__menu-content-search">
+                                        <input type="text" class="ui-dropdown__menu-content-search-input js-search"
+                                            placeholder="Find some" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-fs__form-line">
+                    <div class="p-fs__form-line-block">
+                        <div class="ui-dropdown dropdown js-dropdown">
+                            <div class="ui-dropdown__btn js-dropdownLink" id="awm" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="js-dropdownLinkText">Assosiated with Military?</div>
+
+                                <i class="fa fa-check"></i>
+                                <span class="fa fa-chevron-down"></span>
+                            </div>
+                            <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="yg">
+                                <div class="ui-dropdown__menu-content js-niceScroll">
+                                    <input type="text" class="ui-dropdown__menu-content-input"
+                                        placeholder="Select One" />
+
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree
+                                    </div>
+                                    <div class="ui-dropdown__menu-content-item">
+                                        Associate’s Degree 2
+                                    </div>
+
+                                    <p class="ui-dropdown__menu-content-search">
+                                        <input type="text" class="ui-dropdown__menu-content-search-input js-search"
+                                            placeholder="Find some" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-fs__form-line-block">
+                        <div class="p-fs__form-line-block-date-icon fal fa-calendar-alt"></div>
+                        <input type="text" class="p-fs__form-line-block-input js-datePicker"
+                            placeholder="Date of Birth" />
+                    </div>
+                </div>
+
+                <div class="p-fs__form-line">
+                    <div class="p-fs__form-line-block">
+                        <input type="text" class="p-fs__form-line-block-input" placeholder="Street Address" />
+                    </div>
+                    <div class="p-fs__form-line-block">
+                        <label class="p-fs__form-line-block-label">City</label>
+                        <input type="text" class="p-fs__form-line-block-input" />
+                    </div>
+                </div>
+
+                <div class="p-fs__form-info">
+                    I certify that I am over the age of 18 and agree to the <a href="">Privacy Policy</a>
+                    and <a href="">Terms & Conditions</a>.
+                </div>
+
+                <div class="p-fs__form-results">
+                    <input type="submit" class="p-fs__form-results-submit" value="Show Results" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    //= template/footer.html
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="extension/jquery.nicescroll.js"></script>
+    <script src="extension/bootstrap/js/popper.min.js"></script>
+    <script src="extension/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/global.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="extension/jquery.maskedinput.js"></script>
+    <script>
+        $(function () {
+            $(".js-datePicker").datepicker();
+            $(".js-datePicker").mask("99/99/9999");
+        });
+    </script>
+</body>
+
+</html>

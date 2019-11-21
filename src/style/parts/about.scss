@@ -1,0 +1,262 @@
+@import "_vars.scss";
+
+.about {
+    &-header {
+        background: url("../img/about/bg-header.jpg") center center no-repeat;
+        background-size: cover;
+        box-shadow: inset 0px 0px 0px 5000px rgba(0, 0, 0, .2);
+        padding: 110px 0px 85px;
+        color: #fff;
+        text-align: center;
+
+        &__subtitle {
+            font: bold 16px/19px $cStd;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        &__title {
+            font: 64px/75px $thlM;
+            max-width: 750px;
+            margin: auto;
+        }
+    }
+
+    &-welcome {
+        text-align: center;
+        padding: 100px 0px;
+        box-shadow: inset 0px -1px 0px #DEE1E5;
+        margin-bottom: 150px;
+
+        &__title {
+            font: 48px/56px $thlM;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font: 16px/20px $cStd;
+            max-width: 750px;
+            margin: auto;
+        }
+    }
+
+    &-mission {
+        background: url("../img/about//bg-mission.png") 0px center no-repeat;
+        background-size: 45% auto;
+        padding: 50px 0px 50px 50%;
+        margin-bottom: 150px;
+
+        &__title {
+            font: 48px/56px $thlM;
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            font: 16px/20px $cStd;
+            margin-bottom: 50px;
+        }
+
+        &__btn {
+            max-width: 200px;
+
+            &-link {
+                display: block;
+                background: #0094C1;
+                color: #fff !important;
+                height: 50px;
+                font: bold 16px/48px $cStd;
+                border-radius: 30px;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                    background: lighten(#0094C1, 5%);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &-partners {
+        padding: 150px 0px 130px;
+        background: #FAFBFB;
+
+        &__info {
+            &-title {
+                font: 48px/56px $thlM;
+                margin-bottom: 30px;
+            }
+
+            &-text {
+                font: 16px/20px $cStd;
+                margin-bottom: 50px;
+            }
+
+            &-btn {
+                max-width: 160px;
+
+                &-link {
+                    display: block;
+                    color: #12172A !important;
+                    height: 50px;
+                    font: bold 16px/48px $cStd;
+                    border-radius: 30px;
+                    text-align: center;
+                    border: 1px solid #12172A;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #12172A;
+                        color: #fff !important;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &__icons {
+            display: flex;
+            flex-direction: column;
+            flex-flow: wrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            &-one {
+                max-width: 40%;
+                margin: 0px 5% 50px;
+            }
+        }
+    }
+
+    &-redefine {
+        padding: 170px 0px 100px;
+        background: url("../img/bg-redefine.png") center center no-repeat;
+        background-size: cover;
+        text-align: center;
+
+        &__title {
+            font: 64px/75px $thlM;
+            margin-bottom: 25px;
+            color: #fff;
+        }
+
+        &__align {
+            display: block;
+            margin: auto;
+            width: 200px;
+            background: #F86015;
+            color: #fff;
+            border-radius: 30px;
+            height: 50px;
+            font: 16px/50px $cStd;
+            transition: .5s;
+
+            &:hover {
+                box-shadow: inset 0px 0px 0px 50px lighten(#F86015, 5%);
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .about {
+        &-welcome {
+            padding: 80px 0px;
+            margin-bottom: 80px;
+        }
+
+        &-mission {
+            margin-bottom: 80px;
+        }
+
+        &-partners {
+            padding: 80px 0px;
+        }
+    }
+}
+
+@media (max-width: $screen-sm) {
+    .about {
+        &-redefine {
+            padding: 135px 0px;
+
+            &__title {
+                font-size: 48px;
+                line-height: 56px;
+                max-width: 400px;
+                margin: 0px auto 0px;
+
+                &-set {
+                    font: 20px/24px $cStd;
+                    margin: 10px 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-xs) {
+    .about {
+        &-header {
+            padding: 50px 0px 10px;
+
+            &__title {
+                font-size: 48px;
+                line-height: 56px;
+            }
+
+            &__subtitle {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        &-welcome {
+            padding: 50px 0px;
+
+            &__title {
+                font-size: 36px;
+                line-height: 42px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &-mission {
+            padding: 50px 0px;
+            background-position: 0px 115px;
+            background-size: 90vw auto;
+            margin: 0px;
+
+            &__title {
+                font-size: 36px;
+                line-height: 42px;
+                margin-bottom: 75vw;
+            }
+        }
+
+        &-partners {
+            padding: 50px 0px;
+
+            &__info {
+                margin-bottom: 50px;
+
+                &-title {
+                    font-size: 36px;
+                    line-height: 42px;
+                    margin-bottom: 15px;
+                }
+
+                &-text {
+                    margin-bottom: 15px;
+                }
+            }
+
+        }
+
+        &-redefine {
+            padding: 100px 0;
+        }
+    }
+}

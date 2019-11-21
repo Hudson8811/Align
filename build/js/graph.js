@@ -1,0 +1,1 @@
+jQuery(function(e){function s(){e(window).width()<=992?(o.find(".col-lg-4").addClass("carousel-item"),o.addClass("carousel slide").carousel({interval:5e3,wrap:!0,touch:!0})):(o.removeClass("carousel slide").carousel("dispose"),o.find(".col-lg-4").removeClass("carousel-item"))}var o=e(".js-carousel");s(),e(window).on("resize",function(){s()})});

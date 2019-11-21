@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">-->
+
+    <title>Main</title>
+    <link rel="stylesheet" href="extension/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="extension/font-awesome/css/all.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+    //= template/header.html
+
+    <div class="main-slider">
+        <div id="main" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active main-slider__bg"></div>
+                <div class="carousel-item main-slider__bg"></div>
+                <div class="carousel-item main-slider__bg"></div>
+            </div>
+        </div>
+
+        <div class="main-slider__content">
+            <div class="container">
+                <div class="main-slider__content-title">
+                    Redefine your career path.
+                    <div class="main-slider__content-title-sl">Set your future on track with Align.</div>
+                </div>
+                <div class="main-slider__content-title-info">
+                    Take control of your education and unlock your earning potential.
+                </div>
+                <div class="main-slider__content-title-info m-mobi">
+                    Set your future on track with Align.
+                </div>
+            </div>
+
+            <div class="main-slider__content-getstarted" data-toggle="modal" data-target="#formModal">Get Started</div>
+        </div>
+
+        <i class="main-slider__scroll fa fa-chevron-down js-scrollTo" data-scroll="#steps"></i>
+    </div>
+
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <form class="g-modal-tell-us">
+                <div class="g-modal-tell-us__close fal fa-times" data-dismiss="modal" aria-label="Close"></div>
+                <div class="g-modal-tell-us__step">Step 1. Getting Started</div>
+
+                <div class="g-modal-tell-us__title">Tell us about yourself</div>
+
+                <div class="g-modal-tell-us__line">
+                    <div class="g-modal-tell-us__line-block">
+                        <div class="g-modal-tell-us__line-block-label">First Name</div>
+                        <input type="text" class="g-modal-tell-us__line-block-input" />
+                    </div>
+                    <div class="g-modal-tell-us__line-block">
+                        <div class="g-modal-tell-us__line-block-label">Last Name</div>
+                        <input type="text" class="g-modal-tell-us__line-block-input" />
+                    </div>
+                </div>
+
+                <div class="g-modal-tell-us__line">
+                    <div class="g-modal-tell-us__line-block">
+                        <input type="email" class="g-modal-tell-us__line-block-input" placeholder="Email Address" />
+                    </div>
+                    <div class="g-modal-tell-us__line-block">
+                        <input type="tel" class="g-modal-tell-us__line-block-input" placeholder="Phone Number" />
+                    </div>
+                </div>
+
+                <div class="g-modal-tell-us__line">
+                    <div class="g-modal-tell-us__line-title">
+                        Preferred School Type:
+                    </div>
+
+                    <label class="g-modal-tell-us__line-radio">
+                        <input type="radio" name="type" class="g-modal-tell-us__line-radio-input" />
+                        <span class="g-modal-tell-us__line-radio-decor"></span>
+                        <span class="g-modal-tell-us__line-radio-text">Online</span>
+                    </label>
+                    <label class="g-modal-tell-us__line-radio">
+                        <input type="radio" name="type" class="g-modal-tell-us__line-radio-input" />
+                        <span class="g-modal-tell-us__line-radio-decor"></span>
+                        <span class="g-modal-tell-us__line-radio-text">Campus</span>
+                    </label>
+                    <label class="g-modal-tell-us__line-radio">
+                        <input type="radio" name="type" class="g-modal-tell-us__line-radio-input" />
+                        <span class="g-modal-tell-us__line-radio-decor"></span>
+                        <span class="g-modal-tell-us__line-radio-text">Both</span>
+                    </label>
+                </div>
+
+                <div class="g-modal-tell-us__info">
+                    By clicking Continue, I agree to be contacted by the Align, and its marketing partners by phone,
+                    which may include artificial or pre-recorded calls and/or SMS text messages, delivered via automated
+                    technology to the phone number that I have provided above.
+                </div>
+
+                <div class="g-modal-tell-us__btn">
+                    <input class="g-modal-tell-us__btn-submit" type="submit" value="Continue" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-steps" id="steps">
+        <div class="container js-animatedOrder animated" data-animation-step="250">
+            <h2 class="main-steps__title g-animated js-orderEl">hree simple steps to Align your future:</h2>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="main-steps__one g-animated js-orderEl">
+                        <div class="main-steps__one-title">
+                            Set your desired career and education level.
+                        </div>
+                        <div class="main-steps__one-text">
+                            Choose from a list of occupations and various areas of study.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="main-steps__one g-animated js-orderEl">
+                        <div class="main-steps__one-title">
+                            Learn about your earning potential.
+                        </div>
+                        <div class="main-steps__one-text">
+                            Find out your lifetime earning potential.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="main-steps__one g-animated js-orderEl">
+                        <div class="main-steps__one-title">
+                            Get connected with the right education for you!
+                        </div>
+                        <div class="main-steps__one-text">
+                            School advisors are standing by to help you take the leap of faith!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-problem">
+            <div class="main-problem__small">Our Vision</div>
+            <h2 class="main-problem__title">TStuck in a roadblock?</h2>
+            <div class="main-problem__text">
+                Today, too many people go to school not knowing what they want to use their degree for. So they go and
+                drop out, or get degrees they don’t use and then are stuck with large college bills they can’t pay.
+                <br /><br />
+                Imagine, if just maybe we could help people figure out what they really want to do in life sooner, that
+                maybe we can prevent unnecessary student debt and help people maximize the value of their education. Now
+                that's a problem worth working on.
+            </div>
+        </div>
+
+        <div class="main-philosophy">
+            <div class="main-philosophy__small">Our Philosophy</div>
+            <h2 class="main-philosophy__title">It's time for A Breakthrough!</h2>
+            <div class="main-philosophy__text">
+                The reason we call this “Project Align”, is to align young people’s goals when they want to figure out
+                what school or education is required in order to reach or “align” their educational path with their
+                career path and personal income goals.
+                <br /><br />
+                We help young people pick the right education to match their career choices and help introduce them to
+                Universities and Colleges that may work for them to help them reach their life goals.
+            </div>
+
+            <div class="main-philosophy__align">
+                <a href="" class="main-philosophy__align-link">Align My Career</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-solutions">
+        <div class="container js-animatedOrder animated" data-animation-step="200">
+            <h2 class="main-solutions__title g-animated js-orderEl">Our Solutions</h2>
+
+            <div id="solutions" class="carousel slide main-solutions__slider" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="main-solutions__block programs g-animated js-orderEl">
+                            <h5 class="main-solutions__block-title">
+                                College Programs
+                            </h5>
+
+                            <div class="main-solutions__block-info">
+                                You can choose from 2yr, 4yr, or
+                                6yr college programs.
+                            </div>
+                            <div class="main-solutions__block-more">
+                                <a href="" class="main-solutions__block-more-link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="main-solutions__block programs g-animated js-orderEl">
+                            <h5 class="main-solutions__block-title">
+                                Tips and Tools
+                            </h5>
+
+                            <div class="main-solutions__block-info">
+                                Our platform showcases data & graphs that provide lifetime earning potential.
+                            </div>
+                            <div class="main-solutions__block-more">
+                                <a href="" class="main-solutions__block-more-link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="main-solutions__block programs g-animated js-orderEl">
+                            <h5 class="main-solutions__block-title">
+                                Late Start
+                            </h5>
+
+                            <div class="main-solutions__block-info">
+                                Even if you've got a little gray hair, that doesn't mean it's too late.
+                            </div>
+                            <div class="main-solutions__block-more">
+                                <a href="" class="main-solutions__block-more-link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="carousel-item">
+                        <div class="main-solutions__block programs g-animated js-orderEl">
+                            <h5 class="main-solutions__block-title">
+                                Communities
+                            </h5>
+
+                            <div class="main-solutions__block-info">
+                                Connect employers, educators and future employees with enspire...
+                            </div>
+                            <div class="main-solutions__block-more">
+                                <a href="" class="main-solutions__block-more-link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#solutions" data-slide-to="0" class="active"></li>
+                    <li data-target="#solutions" data-slide-to="1"></li>
+                    <li data-target="#solutions" data-slide-to="2"></li>
+                    <!-- <li data-target="#solutions" data-slide-to="3"></li>-->
+                </ol>
+            </div>
+            <div class="row main-solutions__content">
+                <div class="col-sm-3">
+                    <div class="main-solutions__block programs g-animated js-orderEl">
+                        <h5 class="main-solutions__block-title">
+                            College Programs
+                        </h5>
+
+                        <div class="main-solutions__block-info">
+                            You can choose from 2yr, 4yr, or
+                            6yr college programs.
+                        </div>
+                        <div class="main-solutions__block-more">
+                            <a href="" class="main-solutions__block-more-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="main-solutions__block tools g-animated js-orderEl">
+                        <h5 class="main-solutions__block-title">
+                            Tools that Align
+                        </h5>
+
+                        <div class="main-solutions__block-info">
+                            Our platform showcases
+                            data and graphs that provide earnings over a period of years.
+                        </div>
+                        <div class="main-solutions__block-more">
+                            <a href="" class="main-solutions__block-more-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="main-solutions__block adult g-animated js-orderEl">
+                        <h5 class="main-solutions__block-title">
+                            Adult Transitions
+                        </h5>
+
+                        <div class="main-solutions__block-info">
+                            Even if you've got a little gray hair, thatdoesn't mean it's too late.
+                        </div>
+                        <div class="main-solutions__block-more">
+                            <a href="" class="main-solutions__block-more-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="main-solutions__block communities g-animated js-orderEl">
+                        <h5 class="main-solutions__block-title">
+                            Communities
+                        </h5>
+
+                        <div class="main-solutions__block-info">
+                            Connect employers, educators and future employees with enspire...
+                        </div>
+                        <div class="main-solutions__block-more">
+                            <a href="" class="main-solutions__block-more-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-knowledge">
+        <div class="container">
+            <h2 class="main-knowledge__title">Knowledge is power</h2>
+            <div class="main-knowledge__text">
+                Unlock your future by connecting with the right University for you.
+            </div>
+
+            <div class="main-knowledge__icons js-animateIcons">
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-hardvard.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-cornell.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-stanford.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-princeton.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-rmit.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-gambridge.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-michegan.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-johns-hopkings.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-university-of-verginia.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-ascent.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-berkeley.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-purdue.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-miot.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-atm.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-earnest.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-carnegie.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-sofi.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+                <div class="main-knowledge__icons-one">
+                    <img src="img/icon-florida.png" class="main-knowledge__icons-one-img" alt="" />
+                </div>
+            </div>
+
+            <div class="main-knowledge__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+        </div>
+    </div>
+
+    <div class="main-people">
+        <div class="container">
+            <h2 class="main-people__title">What the people say</h2>
+
+            <div id="peopleSay" class="carousel slide" data-ride="carousel" data-interval="4000">
+                <ol class="carousel-indicators">
+                    <li data-target="#peopleSay" data-slide-to="0" class="active"></li>
+                    <li data-target="#peopleSay" data-slide-to="1"></li>
+                    <li data-target="#peopleSay" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="main-people__content">
+                            <div class="main-people__content-progress"></div>
+                            <img src="img/del-people-say.png" class="main-people__content-ava" alt="" />
+
+                            <div class="main-people__content-quote">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare rhoncus lectus, non
+                                ullamcorper
+                                est ultricies id. Aenean quis hendrerit ex.
+                            </div>
+
+                            <div class="main-people__content-author">
+                                Jackson, <span class="main-people__content-author-post">Aircraft Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="main-people__content">
+                            <div class="main-people__content-progress"></div>
+                            <img src="img/del-people-say.png" class="main-people__content-ava" alt="" />
+
+                            <div class="main-people__content-quote">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare rhoncus lectus, non
+                                ullamcorper
+                                est ultricies id. Aenean quis hendrerit ex.
+                            </div>
+
+                            <div class="main-people__content-author">
+                                Jackson, <span class="main-people__content-author-post">Aircraft Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="main-people__content">
+                            <div class="main-people__content-progress"></div>
+                            <img src="img/del-people-say.png" class="main-people__content-ava" alt="" />
+
+                            <div class="main-people__content-quote">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare rhoncus lectus, non
+                                ullamcorper
+                                est ultricies id. Aenean quis hendrerit ex.
+                            </div>
+
+                            <div class="main-people__content-author">
+                                Jackson, <span class="main-people__content-author-post">Aircraft Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-numbers">
+        <div class="container js-animatedOrder animated" data-animation-step="250">
+            <h2 class="main-numbers__title g-animated js-orderEl">
+                What the numbers say
+            </h2>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="main-numbers__one g-animated js-orderEl">
+                        <div class="main-numbers__one-num">
+                            12,345
+                        </div>
+                        <div class="main-numbers__one-text">
+                            Student aligned their careers
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="main-numbers__one g-animated js-orderEl">
+                        <div class="main-numbers__one-num">
+                            $12M
+                        </div>
+                        <div class="main-numbers__one-text">
+                            in funded
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="main-numbers__one g-animated js-orderEl">
+                        <div class="main-numbers__one-num">
+                            89.9%
+                        </div>
+                        <div class="main-numbers__one-text">
+                            Satisfaction rate
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 col-lg-6">
+                    <h4 class="main-subscribe__title">
+                        Do you want to learn how you can&nbsp;be&nbsp;part of Project Align?
+                    </h4>
+                    <div class="main-subscribe__text">
+                        Go Mobile with us and receive updates on new resources selected just for Align users.
+                    </div>
+                </div>
+                <div class="col-sm-5 col-lg-6">
+                    <div class="main-subscribe__form">
+                        <input type="tel" class="main-subscribe__form-input" value="Enter Phone Number" />
+                        <input type="submit" class="main-subscribe__form-submit" value="Subscribe" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-redefine">
+        <div class="container">
+            <h2 class="main-redefine__title">
+                Redefine your career path.
+                <div class="main-redefine__title-set">Your journey starts here.</div>
+            </h2>
+
+            <a href="" class="main-redefine__align">Align My Career</a>
+        </div>
+    </div>
+
+    //= template/footer.html
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="extension/jquery.nicescroll.js"></script>
+    <script src="extension/bootstrap/js/popper.min.js"></script>
+    <script src="extension/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/global.js"></script>
+    <script>
+        jQuery(function ($) {
+            $(".js-niceScrollMain").niceScroll({
+                cursorborder: "",
+                background: "transparent",
+                cursorcolor: "#12172A",
+                autohidemode: !1,
+                cursorwidth: "8px",
+                zindex: "auto",
+            });
+
+            var showNiceScroll = function (_parent) {
+                if (_parent.hasClass("show")) {
+                    setTimeout(function () {
+                        $(".js-niceScrollMain").getNiceScroll().resize();
+                    }, 100);
+                } else {
+                    setTimeout(function () {
+                        showNiceScroll(_parent);
+                    }, 100);
+                }
+
+            }
+            $(".js-dropdownLink").on("click", function () {
+                var _parent = $(this).parents(".js-dropdown");
+
+                showNiceScroll(_parent);
+            });
+
+            var showIconsNum = 2,
+                $animateIcons = $(".js-animateIcons"),
+                $animateDivs = $animateIcons.find("div"),
+                currentAnimated = 0,
+                animIcons = function () {
+                    $animateDivs.removeClass("active");
+
+                    var i = currentAnimated + showIconsNum;
+                    while (currentAnimated < i) {
+                        $animateDivs.eq(currentAnimated).addClass("active");
+                        currentAnimated++;
+                    }
+
+                    if (currentAnimated > $animateDivs.length) {
+                        currentAnimated = 0;
+                    }
+
+                    setTimeout(function () {
+                        animIcons();
+                    }, 5000);
+                };
+            if ($(window).width() > 768) {
+                showIconsNum = 3;
+            }
+
+            setTimeout(function () {
+                animIcons();
+            }, 3000);
+        });
+    </script>
+</body>
+
+</html>

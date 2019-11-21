@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">-->
+
+    <title>Form</title>
+    <link rel="stylesheet" href="extension/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="extension/font-awesome/css/all.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+    <header class="g-header js-header">
+        <div class="container">
+            <div class="g-header__menu">
+                <i class="g-header__menu-mobi-link js-mobiLink"></i>
+                <div class="g-header__menu-wrap">
+                    <ul class="g-header__menu-content">
+                        <li class="menu-item current-menu-item">
+                            <a href="">How it Works</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">About Us</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Resources</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Educators</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">News</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Help Center</a>
+                        </li>
+                    </ul>
+    
+                    <a href="telTo:(123) 456-7890" class="g-header__menu-tel">
+                        <i class="g-header__menu-tel-icon"></i>
+                        <span class="g-header__menu-tel-num">(123) 456-7890</span>
+                    </a>
+                </div>
+            </div>
+            <a href="/" class="g-header__logo"></a>
+    
+            <a href="telTo:(123) 456-7890" class="g-header__tel">
+                <i class="g-header__tel-icon"></i>
+                <span class="g-header__tel-num">(123) 456-7890</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="container form-line__dummy">
+        <h1 class="form__title">Build your future with Align</h1>
+        <div class="form__title-text">
+            Select various options from the drop-down menu that match your education level and career interests.<br />
+            You can create and compare multiple options that align together in a graph format.
+        </div>
+
+        <div class="row form-main">
+            <div class="col-lg-4">
+                <aside class="form__aside">
+                    <h6 class="form-title">Determine your goals</h6>
+
+                    <form>
+                        <div class="form__aside-block">
+                            <label class="form__aside-block-label">Desired Education Level</label>
+                            <div class="ui-dropdown dropdown checked js-dropdown">
+                                <div class="ui-dropdown__btn js-dropdownLink" id="el" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <div class="js-dropdownLinkText">Desired Education Level</div>
+
+                                    <i class="fa fa-check"></i>
+                                    <span class="fa fa-chevron-down"></span>
+                                </div>
+                                <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="el">
+                                    <div class="ui-dropdown__menu-content js-niceScroll">
+                                        <input type="text" class="ui-dropdown__menu-content-input"
+                                            placeholder="Select One" />
+
+                                        <div class="ui-dropdown__menu-content-item">
+                                            Associate’s Degree
+                                        </div>
+                                        <div class="ui-dropdown__menu-content-item">
+                                            Associate’s Degree 2
+                                        </div>
+                                        <div class="ui-dropdown__menu-content-item">
+                                            Associate’s Degree 3
+                                        </div>
+                                        <div class="ui-dropdown__menu-content-item">
+                                            Sede sdfsdf
+                                        </div>
+
+                                        <p class="ui-dropdown__menu-content-search">
+                                            <input type="text" class="ui-dropdown__menu-content-search-input js-search"
+                                                placeholder="Find some" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__aside-block">
+                            <label class="form__aside-block-label">Area of Study (Interest)</label>
+                            <div class="ui-dropdown dropdown error js-dropdown">
+                                <div class="ui-dropdown__btn js-dropdownLink" id="e2" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <div class="js-dropdownLinkText">Desired Education Level</div>
+
+                                    <span class="fa fa-chevron-down"></span>
+                                </div>
+                                <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="e2">
+                                    <div class="ui-dropdown__menu-content js-niceScroll">
+                                        <input type="text" class="ui-dropdown__menu-content-input"
+                                            placeholder="Select One" />
+
+                                        <div class="ui-dropdown__menu-content-item">
+                                            Associate’s Degree
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__aside-block">
+                            <label class="form__aside-block-label">Occupation</label>
+                            <div class="ui-dropdown dropdown js-dropdown">
+                                <div class="ui-dropdown__btn js-dropdownLink" id="e3" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Desired Education Level
+
+                                    <span class="fa fa-chevron-down"></span>
+                                </div>
+                                <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="e3">
+                                    <div class="ui-dropdown__menu-content js-niceScroll">
+                                        <input type="text" class="ui-dropdown__menu-content-input"
+                                            placeholder="Select One" />
+
+                                        <div class="ui-dropdown__menu-content-item">
+                                            Associate’s Degree
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__aside-block">
+                            <label class="form__aside-block-label">State</label>
+                            <div class="ui-dropdown dropdown js-dropdown">
+                                <div class="ui-dropdown__btn js-dropdownLink" id="e3" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Best State
+
+                                    <span class="fa fa-chevron-down"></span>
+                                </div>
+                                <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="e3">
+                                    <div class="ui-dropdown__menu-content js-niceScroll">
+                                        <input type="text" class="ui-dropdown__menu-content-input"
+                                            placeholder="Select One" />
+
+                                        <div class="ui-dropdown__menu-content-item">
+                                            Arcanzas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__aside-block">
+                            <label class="form__aside-block-label">City</label>
+                            <div class="ui-dropdown dropdown js-dropdown">
+                                <div class="ui-dropdown__btn js-dropdownLink" id="e3" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    New York
+
+                                    <span class="fa fa-chevron-down"></span>
+                                </div>
+                                <div class="dropdown-menu ui-dropdown__menu js-dropdownMenu" aria-labelledby="e3">
+                                    <div class="ui-dropdown__menu-content js-niceScroll">
+                                        <input type="text" class="ui-dropdown__menu-content-input"
+                                            placeholder="Select One" />
+
+                                        <div class="ui-dropdown__menu-content-item">
+                                            New new York
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__aside-block">
+                            <input class="form__aside-block-submit" type="submit" value="+ Add Comparison" />
+                        </div>
+                    </form>
+                </aside>
+            </div>
+            <div class="col-lg-8">
+                <div class="form__graph">
+                    Graph go here
+                </div>
+            </div>
+        </div>
+
+        <div class="form__footer-title">
+            <h6 class="form-title">Lifetime Earning Potential</h6>
+            <div class="form__footer-sub-title">To proceed please chose one of the following:</div>
+        </div>
+        <div class="row form__blocks">
+            <div class="col-lg-4">
+                <div class="form__block m-blue">
+                    <div class="form__block-header">
+                        <div class="form__block-label">
+                            Bachelor’s Degree
+                        </div>
+                        <div class="form__block-title">
+                            Graphic Design
+                        </div>
+                    </div>
+
+                    <div class="form__block-data">
+                        <div class="form__block-data-item">
+                            <div class="form__block-label">
+                                Avg. Annual Income
+                            </div>
+                            <div class="form__block-data-item-num">
+                                $86K
+                            </div>
+                        </div>
+                        <div class="form__block-data-item">
+                            <div class="form__block-label">
+                                Years to Achieve
+                            </div>
+                            <div class="form__block-data-item-num">
+                                4 years
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__block-footer">
+                        <div class="form__block-footer-btn">
+                            <a href="form-2.html" class="form__block-footer-btn-link">Align My Career</a>
+                        </div>
+
+                        <div class="form__block-footer-del">
+                            <i class="fa fa-trash-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form__block m-orange">
+                    <div class="form__block-header">
+                        <div class="form__block-label">
+                            Doctorate Degree
+                        </div>
+                        <div class="form__block-title">
+                            Physical Therapist Assistant & Aide
+                        </div>
+                    </div>
+
+                    <div class="form__block-data">
+                        <div class="form__block-data-item">
+                            <div class="form__block-label">
+                                Avg. Annual Income
+                            </div>
+                            <div class="form__block-data-item-num">
+                                $250K
+                            </div>
+                        </div>
+                        <div class="form__block-data-item">
+                            <div class="form__block-label">
+                                Years to Achieve
+                            </div>
+                            <div class="form__block-data-item-num">
+                                7–10 yrs
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__block-footer">
+                        <div class="form__block-footer-btn">
+                            <a href="form-2.html" class="form__block-footer-btn-link">Align My Career</a>
+                        </div>
+
+                        <div class="form__block-footer-del">
+                            <i class="fa fa-trash-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="form__block m-green">
+                    <div class="form__block-header">
+                        <div class="form__block-label">
+                            Associate’s Degree
+                        </div>
+                        <div class="form__block-title">
+                            Business Development
+                        </div>
+                    </div>
+
+                    <div class="form__block-data">
+                        <div class="form__block-data-item">
+                            <div class="form__block-label">
+                                Avg. Annual Income
+                            </div>
+                            <div class="form__block-data-item-num">
+                                $250K
+                            </div>
+                        </div>
+                        <div class="form__block-data-item">
+                            <div class="form__block-label">
+                                Years to Achieve
+                            </div>
+                            <div class="form__block-data-item-num">
+                                5 years
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__block-footer">
+                        <div class="form__block-footer-btn">
+                            <a href="form-2.html" class="form__block-footer-btn-link">Align My Career</a>
+                        </div>
+
+                        <div class="form__block-footer-del">
+                            <i class="fa fa-trash-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="g-footer">
+        <div class="g-footer__menu">
+            <div class="container">
+                <ul class="g-footer__menu-list">
+                    <li class="menu-item">
+                        <a href="">Disclaimer</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Terms & Conditions</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">SMS Terms</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Unsubscribe</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">FAQs</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="g-footer__social">
+                <div class="g-footer__social-one">
+                    <a href="" class="g-footer__social-one-link fab fa-facebook-square"></a>
+                </div>
+                <div class="g-footer__social-one">
+                    <a href="" class="g-footer__social-one-link fab fa-linkedin"></a>
+                </div>
+                <div class="g-footer__social-one">
+                    <a href="" class="g-footer__social-one-link fab fa-instagram"></a>
+                </div>
+            </div>
+    
+            <div class="g-footer__text">
+                *This is an education offer not related to any jobs, promotions, or rewards. Prospective students should
+                discuss these options with a school representative,
+                as this site does not determine eligibility for financial aid. Financial aid is available to those who
+                qualify.
+                <br /><br />
+                &copy; 2019 Align. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="extension/jquery.nicescroll.js"></script>
+    <script src="extension/bootstrap/js/popper.min.js"></script>
+    <script src="extension/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/global.js"></script>
+</body>
+
+</html>

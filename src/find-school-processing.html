@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">-->
+
+    <title>Find school processing</title>
+    <link rel="stylesheet" href="extension/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="extension/font-awesome/css/all.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+    //= template/header.html
+
+    <div class="p-fs">
+        <div class="container">
+            <div class="p-fs__processing">
+                <svg class="p-fs__processing-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                    preserveAspectRatio="xMidYMid" class="lds-rolling">
+                    <circle cx="50" cy="50" fill="none" ng-attr-stroke="{{config.color}}"
+                        ng-attr-stroke-width="{{config.width}}" ng-attr-r="{{config.radius}}"
+                        ng-attr-stroke-dasharray="{{config.dasharray}}" stroke="#2ECC71" stroke-width="3" r="35"
+                        stroke-dasharray="164.93361431346415 56.97787143782138"
+                        transform="rotate(359.078 50.0015 50.0014)">
+                        <animateTransform attributeName="transform" type="rotate" calcMode="linear"
+                            values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite">
+                        </animateTransform>
+                    </circle>
+                </svg>
+                Sit tight, its processing…
+            </div>
+            <div class="p-fs__title">
+                Finding you the perfect
+                school takes some time..
+            </div>
+
+            <div class="p-fs__please">
+                Please DON’T close your browser or press
+                the back button while you’re waiting.
+            </div>
+        </div>
+    </div>
+
+    //= template/footer.html
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="extension/jquery.nicescroll.js"></script>
+    <script src="extension/bootstrap/js/popper.min.js"></script>
+    <script src="extension/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/global.js"></script>
+</body>
+
+</html>

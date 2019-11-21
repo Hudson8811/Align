@@ -1,0 +1,1 @@
+jQuery(function(n){n(".js-question").on("click",function(){n(this).parents(".js-qBlock").toggleClass("opened").find(".js-answer").slideToggle()})});
