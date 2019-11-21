@@ -2277,6 +2277,10 @@ input:-moz-placeholder {
     color: #fff;
     height: 50px;
     cursor: pointer; }
+    .aside-button span {
+      font-size: 200%;
+      vertical-align: sub;
+      margin-right: 5px; }
   #sliderControl .form__block {
     margin-bottom: 0; }
   #sliderControl .carousel-inner {

@@ -377,6 +377,11 @@
         color: #fff;
         height: 50px;
         cursor: pointer;
+        span{
+            font-size: 200%;
+            vertical-align: sub;
+            margin-right: 5px;
+        }
     }
     #sliderControl{
         .form__block{
