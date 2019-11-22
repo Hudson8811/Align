@@ -8,9 +8,16 @@ jQuery(function ($) {
                     wrap: true,
                     touch: true
                 });
+
+                $('#aside-mobile .g-aside__title').html('Select Career Goals');
+                $('#aside-mobile .g-aside__block-submit').val('Show Grap');
             } else {
                 $carousel.removeClass("carousel slide").carousel('dispose');
                 $carousel.find('.col-lg-4').removeClass('carousel-item');
+
+
+                $('#aside-mobile .g-aside__title').html('Determine your goals');
+                $('#aside-mobile .g-aside__block-submit').val('Calculate');
             }
         };
 

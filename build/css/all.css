@@ -2012,8 +2012,30 @@ input:-moz-placeholder {
   .p-fs__title {
     font: 36px "TiemposHeadline Medium";
     text-align: center;
-    margin: 0px auto 45px;
+    margin: 0px auto 10px;
     max-width: 600px; }
+  .p-fs__sub-title {
+    font: 500 16px "Circular Std";
+    text-align: center;
+    max-width: 400px;
+    margin: 0px auto 35px; }
+  .p-fs__sub-list {
+    font: 500 14px "Circular Std";
+    max-width: 400px;
+    margin: 0px auto 35px;
+    text-align: left; }
+    .p-fs__sub-list ul {
+      list-style: none; }
+      .p-fs__sub-list ul li {
+        position: relative;
+        padding-left: 15px; }
+        .p-fs__sub-list ul li::before {
+          display: block;
+          content: "*";
+          position: absolute;
+          left: 5px;
+          font-size: 10px;
+          top: 1px; }
   .p-fs__form {
     display: block;
     max-width: 600px;
@@ -2081,8 +2103,8 @@ input:-moz-placeholder {
       height: 70px;
       margin: 0px auto 30px; }
   .p-fs__please {
-    font: 500 16px "Circular Std";
-    text-align: center;
+    font: 500 14px "Circular Std";
+    text-align: left;
     max-width: 400px;
     margin: auto; }
     .p-fs__please.m-build {
@@ -2243,6 +2265,7 @@ input:-moz-placeholder {
   #sliderControl .carousel-control-prev, #sliderControl .carousel-control-next {
     display: none; } }
 
+.aside-button-text,
 .aside-button-block {
   display: none; }
 
@@ -2263,6 +2286,11 @@ input:-moz-placeholder {
     #aside-mobile .g-aside__block {
       width: 100%;
       margin-right: 0; }
+  .aside-button-text {
+    display: block;
+    text-align: center;
+    font: 16px "Circular Std";
+    margin: 0 auto 20px; }
   .aside-button-block {
     display: block;
     margin-bottom: 50px;
@@ -2319,7 +2347,19 @@ input:-moz-placeholder {
 
 @media (max-width: 670px) {
   #aside-mobile .g-aside {
-    padding: 30px; } }
+    padding: 30px; }
+  .p-fs__title {
+    margin-bottom: 0; }
+  .p-fs__sub-title {
+    margin-bottom: 30px; }
+  .p-fs__sub-list {
+    font-size: 13px;
+    max-width: 315px; }
+  .p-fs__please {
+    font-size: 13px;
+    max-width: 315px; }
+  .p-fs__please.m-build {
+    margin: 0px auto 45px; } }
 
 .hc {
   /*
