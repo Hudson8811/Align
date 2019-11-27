@@ -3,6 +3,8 @@ jQuery(function ($) {
         checkWidth = function () {
             if ($(window).width() <= 992) {
                 $carousel.find('.col-lg-4').addClass('carousel-item');
+                $carousel.find('.col-lg-4').removeClass('active');
+                $carousel.find('.col-lg-4:first-child').addClass('active');
                 $carousel.addClass("carousel slide").carousel({
                     interval: 5000,
                     wrap: true,

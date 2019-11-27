@@ -26,23 +26,24 @@
     }
 
     &__sub-list{
-        font: 500 14px $cStd;
+        font: 500 16px $cStd;
         max-width: 400px;
         margin: 0px auto 35px;
         text-align: left;
         ul{
-            list-style: none;
+            /*list-style: none;*/
+            padding-left: 15px;
             li{
                 position: relative;
-                padding-left: 15px;
-                &::before{
+
+                /*&::before{
                     display: block;
                     content: "*";
                     position: absolute;
                     left: 5px;
                     font-size: 10px;
                     top: 1px;
-                }
+                }*/
             }
         }
     }
@@ -73,6 +74,13 @@
                     width: 100%;
                     border-bottom: 1px solid #DEE1E5;
                     height: 37px;
+                    &.error {
+                        border-bottom: 1px solid red !important;
+                    }
+
+                    &.valid {
+                        border-bottom: 1px solid green !important;
+                    }
                 }
 
                 &-label {
@@ -134,7 +142,7 @@
     }
 
     &__please {
-        font: 500 14px $cStd;
+        font: 500 16px $cStd;
         text-align: left;
         max-width: 400px;
         margin: auto;
@@ -233,6 +241,21 @@
             border-color: #12172A;
         }
     }
+
+    &__slider-info{
+        font: italic 14px/20px $cStd;
+        text-align: center;
+        color: #7A838E;
+        max-width: 750px;
+        margin: 50px auto 0;
+    }
+}
+
+.success-page{
+    padding: 100px 0 100px;
+    .form__blocks{
+        margin-bottom: 0;
+    }
 }
 
 .ui-datepicker {
@@ -328,6 +351,8 @@
     }
 }
 
+
+
 @media (max-width: $screen-xs) {
     .p-fs {
         &__title {
@@ -370,7 +395,30 @@
 }
 
 
+.form-title{
+    margin-bottom: 45px;
+}
+.submit-graph{
+    span{
+        font-size: 200%;
+        vertical-align: sub;
+        margin-right: 5px;
+    }
+}
+
+.modal-dialog{
+    margin-bottom: 0;
+}
+
 @media (max-width: $screen-md){
+    .form-title{
+        margin-bottom: 30px;
+    }
+    .hideGraph{
+        &:not(.active){
+            display: none;
+        }
+    }
     #aside-mobile{
         display: none;
         position: fixed;
@@ -396,17 +444,26 @@
         text-align: center;
         font: 16px $cStd;
         margin:  0 auto 20px;
+        &:not(.active){
+            display: none;
+        }
     }
     .aside-button-block{
         display: block;
         margin-bottom: 50px;
         text-align: center;
+        &:not(.active){
+            display: none;
+        }
+        &_top{
+            margin-top: 40px;
+        }
     }
     .aside-button{
         display: block;
         width: 260px;
         margin: auto;
-        background: #F86015;
+        background: #0094C1;
         border-radius: 30px;
         font: 16px/50px "Circular Std";
         color: #fff;
@@ -416,6 +473,9 @@
             font-size: 200%;
             vertical-align: sub;
             margin-right: 5px;
+        }
+        &:hover{
+            background: #00a8db;
         }
     }
     #sliderControl{
@@ -444,9 +504,7 @@
         .form__block-data-item{
             width: 100%;
         }
-        .form__block-data-item:nth-child(2){
-            display: none;
-        }
+
         .form__block-footer-btn{
             padding-right: 0;
         }
@@ -468,9 +526,19 @@
     #chart_div{
         >div:first-child{
             margin-top: -60px;
-            z-index: -1;
             position: relative;
         }
+    }
+    .form__footer-title{
+        margin-top: 0 !important;
+    }
+
+    .p-fs__please.m-build {
+        margin: 0px auto 0;
+    }
+
+    .success-page{
+        padding: 50px 0;
     }
 }
 
@@ -487,14 +555,11 @@
         margin-bottom: 30px;
     }
     .p-fs__sub-list {
-        font-size: 13px;
+        /*font-size: 13px;*/
         max-width: 315px;
     }
     .p-fs__please {
-        font-size: 13px;
+        /*font-size: 13px;*/
         max-width: 315px;
-    }
-    .p-fs__please.m-build {
-        margin: 0px auto 45px;
     }
 }
